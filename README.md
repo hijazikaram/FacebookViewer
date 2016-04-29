@@ -28,7 +28,7 @@ Now let's put in the code necessary to get our authentication working:
 
 `app.use(passport.initialize())`
 
-* Include the passport.session middleware 
+* Include the passport.session middleware
 
 `app.use(passport.session())`
 
@@ -60,7 +60,7 @@ Since you won't be doing anything further than just passing objects to/from pass
 passport.serializeUser(function(user, done) {
   done(null, user);
 });
- 
+
 passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
